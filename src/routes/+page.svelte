@@ -1,11 +1,20 @@
 
 
-<script lang="ts">
+<!--- <script lang="ts"> 
   import { cubes } from '$lib/filters';
   let raw = '1 3 5 7 9 999';
   $: input = raw.trim().split(/\s+/).filter(Boolean).map(Number);
   $: output = cubes(input);
 </script>
+-->
+
+<script lang="ts"> 
+  import { collatzs } from '$lib/filters';
+  let raw = '4 2 8 3 9 4 10';
+  $: input = raw.trim().split(/\s+/).filter(Boolean).map(Number);
+  $: output = collatzs(input);
+</script>
+
 
 <h1>Sequence Filter Demo</h1>
 <label>
